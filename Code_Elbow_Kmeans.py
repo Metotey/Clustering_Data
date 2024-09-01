@@ -18,7 +18,7 @@ print(df.info())
 features = ['MetaRNN_z_score', 'SNPred_z_score', 'CPT-1_z_score', 'GEMME_z_score']
 X = df[features]
 inertias = []
-K = range(1, 11)
+K = range(1, 10)
 
 for k in K:
     kmeans = KMeans(n_clusters=k, random_state=42)
